@@ -63,7 +63,6 @@ header {
   order: 2;
 }
 
-
 .buttons a:hover{
   color: #A34141;
   transition: ease-in-out 0.3s;
@@ -91,15 +90,13 @@ header {
   animation: animate 10s linear infinite;
 }
 
-
-
 @keyframes animate{
-    0%{
-        background-position: 0%;
-    }
-    100%{
-        background-position: 300%;
-    }
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 300%;
+  }
 }
 
 #banner h2{
@@ -187,7 +184,6 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  
 }
 
 #project h2{
@@ -202,7 +198,6 @@ header {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
 }
 
 .card {
@@ -241,7 +236,6 @@ header {
   display: flex;
   flex-direction: column;
   height: 300px;
-
 }
 
 .card2 h3{
@@ -260,6 +254,7 @@ header {
   font-size: 16px;
   color: #333;
 }
+
 .video-container {
   display: flex;
   flex-direction: column;
@@ -295,12 +290,11 @@ header {
   justify-content: center;
   margin-top: 18%;
   margin-bottom: 1%;
-  
 }
+
 #contact h3{
   font-size: 26px;
 }
-
 
 .chad {
   display: flex;
@@ -328,6 +322,7 @@ header {
   justify-content: space-evenly;
   margin-top: 5%;
 }
+
 .card3 {
   background-color: #2a2a2a;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -359,6 +354,7 @@ header {
   height: auto;
   width: auto;
 }
+
 .card-content2 img{
   border-radius: 50%;
   transform: scale(0.9);
@@ -391,18 +387,17 @@ hr {
   margin: 0;
   width: 100%;
 }
+
 .bottom {
   height: 45px;
 }
+
 .centered{
   display: flex;
   justify-content: center;
 }
 
-
-
 @media (max-width: 767px) {
-
   header {
     position: fixed;
     height: auto;
@@ -435,9 +430,11 @@ hr {
   #banner h2{
     font-size: 15px;
    }
+
   #overview{
     height: 120px;
   }
+
   #overview h2{
     height: 28px;
     font-size: 17px;
@@ -476,7 +473,6 @@ hr {
     max-height: none;
     left: 65vw;
     top: 90vh;
-    
   }
     
   .ellipse-3 {
@@ -487,14 +483,15 @@ hr {
     left: 70vw;
     top: 83vh;
   }
+
   #project h2{
     margin-top: 100px;
     display: flex;
     font-size: 17px;
     justify-content: center;
     margin-bottom: 28px;
-    
   }
+
   .card {
     width: 230px;
     height: 360px;
@@ -503,6 +500,7 @@ hr {
   #contact h2{
     font-size: 17px;
   }
+
   #contact h3{
     font-size: 11px;
   }
@@ -557,8 +555,8 @@ hr {
     max-height: none;
     left: 65vw;
     top: -55%;
-
   }
+  
   .ellipse-3 {
     width: 80px;
     height: 80px;
