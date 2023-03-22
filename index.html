@@ -15,6 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="icon" type="image/x-icon" href="img\profil pic.jpg">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/galerie.css">
     <title>Guerin Jean</title>
 </head>
 <body>
@@ -54,15 +55,28 @@
         <div class="container">
             <div class="card">
                 <div class="card-text">
-                    <h2>3D World Designing</h2>
-                </div>  
-                <div class="video-container">
-                    <div style="position:relative;width:fit-content;height:fit-content;">
-                        <a style="position:absolute;top:20px;right:1rem;opacity:0.8;" href="https://clipchamp.com/watch/pNkprYEWU4k?utm_source=embed&utm_medium=embed&utm_campaign=watch"></a>
-                        <iframe allow="autoplay;" allowfullscreen style="border:none" src="https://clipchamp.com/watch/pNkprYEWU4k/embed" width="250" height="350" autoplay></iframe>
-                    </div>
-                </div>                
+                    <section class="content slider">
+                        <section class="conteneur diapos">      
+                            <article class="chose un slide">
+                                <div class="chose-conteneur">
+                            </article>          
+                            <article class="chose deux slide">
+                                <div class="chose-conteneur">
+                                </div>
+                            </article>         
+                            <article class="chose trois slide">
+                                <div class="chose-conteneur">
+                                </div>
+                            </article>                       
+                            <article class="chose quatre slide">
+                                <div class="chose-conteneur">
+                                </div>
+                            </article>      
+                        </section>
+                    </section>
+                    <h2>3D Design</h2>
             </div>
+        </div>
             <div class="card">
                 <div class="card2">
                     <div class="card-text">
@@ -107,6 +121,26 @@
         <hr>
         <p class="centered">Design and Development by Guerin Jean</p>
     </footer>
+    <script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery.glide.min.js"></script>
+	<script>
+
+		var diapos = $('.chose-img');
+
+		var glide = $('.slider').glide({
+			arrowRightText: '',
+			arrowLeftText: '',
+			autoplay: false,
+			circular: false,
+			beforeTransition: function() {
+				$(diapos).eq(-this.currentSlide).removeClass('fadeInUpBig').addClass('fadeOutDownBig');
+
+			},
+			afterTransition: function() {
+				$(diapos).eq(-this.currentSlide).removeClass('fadeOutDownBig').addClass('fadeInUpBig');
+			}
+		});
+	</script>
 </body>
 </html>
 
