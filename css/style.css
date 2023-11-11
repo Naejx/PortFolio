@@ -407,6 +407,7 @@ hr {
    
   .buttons a{
     margin: 5px;
+    display: none;
   } 
 
   .buttonsicon {
